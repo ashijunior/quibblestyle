@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background-color: white;
+    border: 1px solid #c2c7c9;
+    z-index: 1000;
+}
+
+  /* Logo/Image Text */
+.imgtext {
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.imgtext i {    
+    color: #ff4500;
+    font-size: 30px;
+}
+
+.imgtext p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff4500; 
+    cursor: pointer;
+}
+
+  /* Search Bar */
+.searchbar {
+    flex: 1;
+    max-width: 600px;
+    margin-right: auto;
+}
+
+.search-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-toggle i {
+    position: absolute;
+    left: 12px;
+    color: #878a8c;
+    font-size: 16px;
+}
+
+.searchbar input {
+    width: 90%;
+    padding: 10px 10px 10px 36px;
+    background-color: #f6f7f8;
+    border: 1px solid #edeff1;
+    border-radius: 2.2rem;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.searchbar input:focus {
+    background-color: white;
+    border-color: #0079d3;
+}
+
+  /* Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 16px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.create-group {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  transition: background-color 0.2s;
+}
+
+.create-group:hover {
+  background-color: #e9ebed;
+  border-radius: 2rem;
+}
+
+.create-group i {
+  margin-right: 2px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #555353;
+}
+
+.create-group span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Notification With Badge */
+.notification-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #ff4500;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.icons i:not(.fa-plus) {
+  font-size: 20px;
+  color: #4a4848;
+  transition: color 0.2s;
+}
+
+.icons i{
+    padding: 6px;
+    border-radius: 2rem;
+}
+
+.icons i:hover {
+  background-color: #e9ebed;
+}
+
+/* Section */
+.sections {
+    display: flex;  
+    width: 100%;
+    min-height: 100vh;
+    gap: 0;  
+    margin-top: 56px;
+}
+
+.leftsection {
+    flex: 0 0 22%;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+.rightsection {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.texts span {
+    font-weight: 600; 
+    color: black;
+}
+  /* Left Section */
+.leftsection {
+  height: calc(100vh - 56px);
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.leftsection > div {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.leftsection > div:hover {
+    background-color: #e9ebed;
+}
+
+.leftsection i {
+    font-size: 20px;
+    color: #a1a1a3;
+    width: 24px;
+    text-align: center;
+}
+
+.leftsection span {
+    font-size: 14px;
+    font-weight: 350;
+    color: #1a1a1b;
+}
+
+.leftsection hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 12px 0;
+}
+
+.leftsection p {
+    padding: 8px 16px;
+    color: #4f565d;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+ /* Right Section */
+.rightsection {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.rightsection h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #1a1a1b;
+}
+
+.texts {
+    display: flex;
+    gap: 24px; 
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.texts a {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.texts a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.texts a.active {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.texts span {
+    font-size: 15px;
+    padding: 8px 0;
+    color: grey;
+}
+
+.accounttext {
+    margin-top: 24px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1a1a1b;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.avatar-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.avatar-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.save-btn {
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save-btn:hover {
+    background-color: #e03c00;
+}
+
+/* Checkbox Styles */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: #ff4500;
+}
+
+.checkbox-group label {
+    font-size: 15px;
+    color: #1a1a1b;
+    cursor: pointer;
+}
+
+/* Radio Button Styles */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    accent-color: #ff4500; /* Reddit orange */
+}
+
+.radio-option label {
+    font-size: 14px;
+    color: #1a1a1b;
+    cursor: pointer;
+}

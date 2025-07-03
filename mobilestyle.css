@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 8px;
+    }
+    
+    .imgtext {
+        margin-right: 0;
+    }
+    
+    .imgtext p {
+        display: none;
+    }
+    
+    .searchbar {
+        margin: 0 8px;
+    }
+    
+    .searchbar input {
+        width: 100%;
+    }
+    
+    .icons {
+        gap: 0;
+        margin-left: 8px;
+    }
+    
+    .icons i {
+        padding: 6px;
+    }
+    
+    .create-group span {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    
+    .menu-toggle i {
+        font-size: 24px;
+        color: #4a4848;
+    }
+    
+    .leftsection {
+        position: fixed;
+        top: 56px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 56px);
+        z-index: 999;
+        transition: left 0.3s ease;
+    }
+    
+    .rightsection {
+        padding: 16px;
+    }
+    
+    .texts {
+        gap: 12px;
+    }
+    
+    .texts span {
+        font-size: 14px;
+    }
+    
+    .accounttext {
+        margin-top: 16px;
+    }
+}
