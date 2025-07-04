@@ -84,37 +84,31 @@
             <div class="rightsection">
                 <h1>Settings</h1>
                 <div class="texts">
-                    <a href="Index.html"><span>Account</span></a>
+                    <a href="Index.html" class="active"><span class="active">Account</span></a>
                     <a href="password.html"><span>Password</span></a>
-                    <a href="notification.html" class="active"><span>Notifications</span></a>
+                    <a href="notification.html"><span>Notifications</span></a>
                 </div>
                 <div class="accounttext">
-                    <div class="notifications-section">
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox">
-                            <label>Email notifications</label>
+                    <div class="form-group">
+                        <label>Change username</label>
+                        <input placeholder="Enter new username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Change email</label>
+                        <input placeholder="Enter new email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Update profile bio</label>
+                        <textarea placeholder="Tell us about yourself"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload new avatar</label>
+                        <div class="avatar-preview">
+                            <img src="faint.jpeg">
                         </div>
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" checked>
-                            <label>Push notifications</label>
-                        </div>
-                        <div class="form-group">
-                            <label>Notification frequency</label>
-                            <div class="radio-group">
-                                <div class="radio-option">
-                                    <input type="radio" checked>
-                                    <label>Immediately</label>
-                                </div>
-                                <div class="radio-option">
-                                    <input type="radio">
-                                    <label>Daily digest</label>
-                                </div>
-                                <div class="radio-option">
-                                    <input type="radio">
-                                    <label>Weekly digest</label>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="save-btn">Save Changes</button>
                     </div>
                 </div>
             </div>
